@@ -27,9 +27,8 @@ ul {
     list-style: none;}
 
 .container {
-    width: 1230px;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .header-container {
@@ -115,7 +114,7 @@ ul {
     color: var(--accent-color);  
 }
 
-.center {
+.hero {
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -123,7 +122,7 @@ ul {
     text-align: center;
 }
 
-.hero {
+.center {
     display: block;
     margin-bottom: 40px;
 
@@ -166,9 +165,12 @@ ul {
     display: block;
 }
 
+.section {
+    padding: 94px 0px;
+}
+
 .benefits-container {
     display: flex;
-    padding: 94px 0px;
 
 }
 
@@ -191,6 +193,9 @@ ul {
     font-size: 14px;
     line-height: 1.71;
     color: var(--title-text-color);
+}
+.foto-work {
+    padding-bottom: 94px;
 }
 .title {
     text-align: center;
@@ -221,12 +226,14 @@ ul {
 }
 
 .section-img {
-    margin-bottom: 30px;
     width: 270px;
 }
 
+.job {
+    padding: 30px 10px;
+}
 .section-title {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 
     font-weight: 500;
     font-size: 16px;
@@ -243,7 +250,10 @@ ul {
 }
 
 .personal {
+    background-color: var(--primary-white-color);
     margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .personal:nth-child(4n) {
     margin-right: 0px;
@@ -273,14 +283,12 @@ ul {
     line-height: 1.88;
     color: var(--title-text-color)}
 
-    .footer-container {
-        padding: 60px 0px;
-    }
     .logo-footer {
         padding: 0px;
         margin-bottom: 20px;
     }
 .footer {
+    padding: 60px 0px;
     background-color: #2F303A;
     font-style: normal;
 }
@@ -288,9 +296,10 @@ ul {
 .footer .logo-primary {
     color: var(--primary-white-color);
 }
-.contact{
-    margin-bottom: 9px;
-}
+
+.footer-link:nth-child(2) {
+    margin-bottom: 0;
+  }
 
 .footer-link {
     display: block;
@@ -305,11 +314,15 @@ ul {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
 .footer-link:hover,
 .footer-link:focus {
     color: var(--primary-white-color);
     color: var(--accent-color);}
-
+    
+.footer-link-emeil{
+    margin-bottom: 0;
+}
 .footer-address {
     display: block;
     margin-bottom: 9px;
@@ -328,18 +341,20 @@ ul {
     color: var(--primary-white-color);
     color: var(--accent-color);}
 
+    .general {
+    padding: 94px 0px;
+}
+
 .features {
     display: flex;
     justify-content: center;
-    padding: 94px 0px 56px;
+    margin-bottom: 50px;
     
 }
 
 .link-button {
     display: block;
-    margin-right: 8px;
     
-
     display: inline-block;
     padding: 6px 22px;
     min-width: 73px;
@@ -353,7 +368,9 @@ ul {
     letter-spacing: 0.03em;
     font-family: inherit;
     color: var(--primary-text-color); 
-    border-radius: 4px;}
+    background-color: #F5F4FA;;
+    border-radius: 4px;
+    border: none;}
     
     
 .features .link-button:hover,
@@ -363,18 +380,31 @@ ul {
     background-color: var(--accent-color);
     cursor: pointer;}
 
+.features-link {
+    margin-right: 8px;
+}
+.features-link:last-child {
+    margin-right: 0;
+}
+
 .projects {
 display: flex;
 flex-wrap: wrap;
-margin-bottom: 94px;
 }
+
  .projects-img {
     width: 370px;
 }
 .different-project {
     margin-right: 30px;
     margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
 }
 .different-project:nth-child(3n) {
     margin-right: 0px;
+}
+.different-projects {
+    padding: 20px 24px;
+    background: var(--primary-white-color);
+
 }
