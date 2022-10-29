@@ -29,6 +29,7 @@ ul {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .header-container {
@@ -63,10 +64,6 @@ ul {
     color: var(--primary-text-color);
 }
 
-.link {
-    margin-right: 50px;
-}
-
 .site-nav a {
     display: inline-block;
     color: var(--primary-text-color)}
@@ -96,15 +93,27 @@ ul {
     text-decoration: none;
 }
 
+ .contact-nav-link {
+    margin-right: 50px;
+ }
+ .contact-nav-link:last-child{
+    margin-right: 0;
+ } 
+
 .contacts {
     display: flex;
     align-items: center;
 }
+.contact-nav {
+    margin-right: 50px;
+}
 
+.contact-nav:last-child {
+    margin-right: 0;
+}
 
 .contact-link {
     display: inline-block;
-    margin-right: 50px;
     font-style: normal;
     text-decoration: none;
 
@@ -174,6 +183,13 @@ ul {
 
 }
 
+.benefits-compani {
+    margin-right: 30px;
+}
+.benefits-compani:last-child{
+    margin-right: 0;
+}
+
 .benefits {
     padding-top: 94px;
     padding-bottom: 114px;
@@ -189,7 +205,7 @@ ul {
     text-transform: uppercase;}
 
 .benefits-text {
-
+    width: 270px;
     font-size: 14px;
     line-height: 1.71;
     color: var(--title-text-color);
@@ -205,12 +221,14 @@ ul {
     display: flex;
 }
 .work-foto {
+    display: block;
     margin-right: 30px;
 }
 .work-foto:nth-child(3n){
     margin-right: 0px;
 } 
 .section-foto {
+    display: block;
     text-align: center;
     width: 370px;
 }
@@ -226,6 +244,7 @@ ul {
 }
 
 .section-img {
+    display: block;
     width: 270px;
 }
 
@@ -267,7 +286,9 @@ ul {
     line-height: 1.17;
     text-align: center;  
 }
-
+.projects {
+    flex-wrap: wrap;
+}
 .projects-title {
     margin-bottom: 4px;
 
@@ -296,6 +317,9 @@ ul {
 .footer .logo-primary {
     color: var(--primary-white-color);
 }
+.contact-footer {
+    margin-bottom: 9px;
+}
 
 .footer-link:nth-child(2) {
     margin-bottom: 0;
@@ -303,7 +327,6 @@ ul {
 
 .footer-link {
     display: block;
-    margin-bottom: 9px;
 
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
@@ -325,7 +348,6 @@ ul {
 }
 .footer-address {
     display: block;
-    margin-bottom: 9px;
 
     color: var(--primary-white-color);
     text-decoration: none;
@@ -389,16 +411,21 @@ ul {
 
 .projects {
 display: flex;
-flex-wrap: wrap;
+
 }
 
  .projects-img {
+    display: block;
     width: 370px;
+    height: auto;
+    max-width: 100%;
 }
 .different-project {
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
+}
+.different-project:nth-child(n + 7) {
+     margin-bottom: 0;
 }
 .different-project:nth-child(3n) {
     margin-right: 0px;
@@ -406,5 +433,7 @@ flex-wrap: wrap;
 .different-projects {
     padding: 20px 24px;
     background: var(--primary-white-color);
+    border: 1px solid #EEEEEE;
+    border-top: none;
 
 }
